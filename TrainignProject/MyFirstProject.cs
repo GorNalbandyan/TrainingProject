@@ -8,18 +8,22 @@ namespace TrainignProject
 {
     internal class MyFirstProject
     {
-        
+        public static void PrintFullName()
+        {
+            Console.WriteLine("Enter your firs name please");
+            string firstName = Console.ReadLine();
+
+            Console.WriteLine("Enter your second name, please");
+            string secondName = Console.ReadLine();
+            Console.WriteLine($"The sum age of the couple is: {firstName} {secondName}");
+        }
     
         public static void Main()
         {
-            Console.WriteLine("Enter your age please");
-            int myAge = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter your spouse's age please");  
-            int spouseAge = Convert.ToInt32(Console.ReadLine());
-            int sum = myAge + spouseAge;
-            Console.WriteLine($"The sum age of the couple is: {sum}");
+            PrintFullName();
         }
     }
+
 
 
 }
