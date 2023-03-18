@@ -12,15 +12,6 @@ namespace TrainignProject
     
         public static void Main()
         {
-            //var a = 1;
-            //int b = 2;
-            //
-            //int sum = a + b;
-            //Console.WriteLine(sum);
-
-
-            //Console.WriteLine(1+2);
-
             Console.WriteLine("Enter your age please");
             int myAge = int.Parse(Console.ReadLine());
 
