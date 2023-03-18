@@ -8,19 +8,19 @@ namespace TrainignProject
 {
     internal class MyFirstProject
     {
-        public static void PrintFullName()
+       
+        public static void PrintFullName(string firstName, string lastName)
         {
-            Console.WriteLine("Enter your firs name please");
-            string firstName = Console.ReadLine();
-
-            Console.WriteLine("Enter your second name, please");
-            string secondName = Console.ReadLine();
-            Console.WriteLine($"The sum age of the couple is: {firstName} {secondName}");
+            Console.WriteLine($"Your full name is: {firstName} {lastName}");
         }
     
         public static void Main()
         {
-            PrintFullName();
+            Console.WriteLine("Enter your firs name please");
+            string firstName = Console.ReadLine();
+            Console.WriteLine("Enter your second name, please");
+            string secondName = Console.ReadLine();
+            PrintFullName(firstName, secondName);
         }
     }
 
